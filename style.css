@@ -1,0 +1,122 @@
+:root {
+    --aside-width: 15%;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html,body {
+    height:100%;
+}
+
+img{
+    width:50%
+}
+
+body{
+    margin:0;
+    display:grid;
+    grid: auto/ var(--aside-width) 1fr;
+    font-family: "Comic sans MS";
+}
+
+aside{
+    background-color: #94aaf9;
+}
+
+.aside__wrapper {
+    position: fixed;
+    width:  15%;
+    width: var(--aside-width);
+}
+
+.header{
+    padding:3em 0;
+}
+
+.header__logo{
+    background-color: blueviolet;
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius:50%;
+    background-image: url("https://www.lightsong.net/wp-content/uploads/2020/12/blank-profile-circle.png");
+    background-size: cover;
+    margin:0 auto;
+}
+
+.header__title{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.nav__links{
+    list-style:none;
+    margin:0;
+    padding: 0;
+}
+
+.nav__links{
+   
+    text-align: center;
+}
+
+.nav__links + * {
+    padding-top: 4em;
+    position: relative;
+}
+
+.nav__link + *::before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 1px;
+    background-color: black;
+    transform: translateX(-7.5%);
+}
+
+
+.nav__links a{
+text-decoration: none;
+color: inherit;
+font-family: 'Concert One',sans-serif;
+font-size: 48px;
+}
+
+.main__heading {
+    font-size: 96px;
+    text-align: center;
+}
+.main__text{
+font-size: 100%;
+text-align: center;
+}
+
+.main__text--center{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__content{
+    padding: 4em;
+    gap: 4em;
+    display:flex;
+}
+
+.main__content{
+    flex: 1 1 0;
+}
+.main__frame {
+    display: flex;
+    background-color: gray;
+    padding: 4em;
+    gap:4em;
+}
+
+.main__frame img {
+    width: calc(100% / 3 - 4em);
+}
