@@ -1,0 +1,15 @@
+body {
+  background-color: white;
+}
+
+div {
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr /1fr 1fr 1fr 1fr;
+  /* align-items: center; */
+  /* justify-content: center; */
+  place-items: center;
+}
+
+img {
+  width: 200px;
+}
