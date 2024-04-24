@@ -2,12 +2,28 @@ body {
   background-color: white;
 }
 
-div {
+.maingrid {
   display: grid;
   grid: 1fr 1fr 1fr 1fr /1fr 1fr 1fr 1fr;
   /* align-items: center; */
   /* justify-content: center; */
   place-items: center;
+  /* background-color: blue; */
+}
+
+/* .maingrid div { */
+/* background-color: red;*/
+/* } */
+
+.maingrid div img {
+  object-fit: cover;
+  height: 200px;
+  aspect-ratio: 1;
+}
+
+.test {
+  /* outline: 3px solid yellow; */
+  object-position: left;
 }
 
 img {
